@@ -11,7 +11,7 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 # Inicializa a aplicação FastAPI
 app = FastAPI()
 
-# ✅ Configuração de CORS
+#  Configuração de CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # Você pode trocar "*" pelo domínio do seu frontend
